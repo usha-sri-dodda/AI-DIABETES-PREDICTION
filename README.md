@@ -21,6 +21,8 @@ using Random Forest classification on patient health data.
 
 ## 📁 Project Structure
 ai-diabetes-prediction/
+├── notebooks/
+│   ├── ai-based-diabetes-prediction-system.ipynb     ← kaggle notebook
 ├── models/
 │   ├── model.pkl        ← trained Random Forest model
 │   └── scaler.pkl       ← StandardScaler
