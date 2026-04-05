@@ -1,31 +1,51 @@
-# AI-Based Diabetes Prediction System
+# 🩺 AI-Based Diabetes Prediction System
 
-Predicts diabetes risk using Random Forest classification on patient health data.
+A machine learning project that predicts diabetes risk 
+using Random Forest classification on patient health data.
 
-## Dataset
-Mendeley — Diabetes Risk Prediction Dataset  
-Features: Age, BMI, Glucose, Blood Pressure, Cholesterol, Physical Activity Level
+## 📊 Dataset
+- **Source:** Mendeley — Diabetes Risk Prediction Dataset
+- **Samples:** 20,000 patient records
+- **Features:** Age, BMI, Physical Activity, Blood Pressure,
+  Cholesterol, Glucose
 
-## Project Structure
+## 🤖 Model Performance
+| Metric    | Score   |
+|-----------|---------|
+| Accuracy  | 97.15%  |
+| Precision | 97%+    |
+| Recall    | 97%+    |
+| F1-Score  | 97%+    |
+| ROC-AUC   | 99%+    |
+| CV Score  | 97.15%  |
+
+## 📁 Project Structure
 ai-diabetes-prediction/
-├── notebooks/        ← Kaggle notebook
-├── models/           ← model.pkl, scaler.pkl
-├── data/             ← dataset CSV
-├── app/              ← Streamlit web app
-│   ├── app.py
-│   └── requirements.txt
-├── outputs/          ← plots and charts
+├── models/
+│   ├── model.pkl        ← trained Random Forest model
+│   └── scaler.pkl       ← StandardScaler
+├── appp.py               ← Streamlit web app
+├── requirements.txt     ← dependencies
 └── README.md
 
-## Status
-- [ ] Step 1 — Load & explore dataset
-- [ ] Step 2 — Preprocessing
-- [ ] Step 3 — Train Random Forest
-- [ ] Step 4 — Evaluate model
-- [ ] Step 5 — Save model (.pkl)
-- [ ] Step 6 — Build Streamlit app
-- [ ] Step 7 — Deploy on Streamlit Cloud
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-## Links
-- Kaggle Notebook: coming soon
-- Live App: coming soon
+## 🔗 Links
+- 📓 Kaggle Notebook: https://www.kaggle.com/code/dushasri/ai-based-diabetes-prediction-system/
+- 🌐 Live App: https://ai-diabetes-prediction-b22c6bn7dbhti5hh9wwemb.streamlit.app/
+
+## 🛠️ Tech Stack
+- Python 3.12
+- Scikit-learn — Random Forest
+- Streamlit — Web interface
+- Pandas / NumPy — Data processing
+- Matplotlib — Visualization
+- Joblib — Model persistence
+
+## ⚠️ Disclaimer
+For educational purposes only.
+Always consult a healthcare professional for medical diagnosis.
